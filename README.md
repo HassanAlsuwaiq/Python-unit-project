@@ -20,3 +20,8 @@ streamlit run app.py
 ```
 
 The `.env` file with the API keys is already included.
+
+## API keys
+
+`.env` is not in the repo. Copy `.env.example` to `.env` and fill in your own keys
+(Gemini, DeepL, Groq). The team lead shares the keys privately.
