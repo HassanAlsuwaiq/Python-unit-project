@@ -21,6 +21,7 @@ if audio and st.button("Translate"):
         text, msa, translation, audio_file = process("input.wav", language)
 
     st.write("**You said:**", text)
+    st.write("**Gemini convert it to:**", msa)
     st.write("**Translation:**", translation)
     if audio_file:
         st.audio(audio_file, autoplay=True)

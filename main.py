@@ -15,12 +15,34 @@ LANGUAGES = {
     "Spanish": ("ES", "es"),
     "Portuguese": ("PT-BR", "pt"),
     "Korean": ("KO", "ko"),
-}
+    "Japanese":("JA","ja"),
+    "Italian": ("IT","it"),
+    "Bulgarian": ("BE","bg"),
+    "Greek": ("EL","el"),
+    "Indonesian":("ID","id"),
+    "Dutch": ("NL","nl"),
+    "Russian":("RU","ru"),
+    "Turkish": ("TR","tr"),
+    "Czech": ("CS","cs"),
+    "Hindi": ("HI","hi"),
+    "Polish": ("PL","pl"),
+    "Slovak": ("Sk","sk"),
+    "Ukrainian": ("UK","uk"),
+    "Danish": ("DA","da"),
+    "Estonian": ("ET","et"),
+    "Croatian": ("HR","hr"),
+    "Lithuanian": ("LT","lt"),
+    "Slovenian": ("SL","sl"),
+    "Vietnamese": ("VI","vi"),
+    "German": ("DE","de"),
+    "Finnish": ("FI","fi"),
+    "Hungarian": ("HU","hu"),
+    "Latvian": ("LV","lv"),
+    "Romanian": ("RO","ro"),
+    "Swedish": ("SV","sv")
+                }
 
-# loaded once, when this file is first imported
 
-
-# Groq-hosted Whisper speech-to-text (from speech_to_text.py), needs GROQ_API_KEY in .env
 stt = SpeechToText(os.getenv("GROQ_API_KEY"))
 gemini = GeminiProcessor(os.getenv("GEMINI_API_KEY"))
 translator = Translator(os.getenv("DEEPL_API_KEY"))
