@@ -1,7 +1,7 @@
 from supertonic import TTS
 from IPython.display import Audio, display
 
-
+# A class to handle the conversion of text to speech using Supertonic TTS
 class TextToSpeech:
 
     def __init__(self):
@@ -11,6 +11,7 @@ class TextToSpeech:
         # Load the voice style
         self.style = self.tts.get_voice_style(voice_name="M1")
 
+    # method to synthesize speech from text
     def synthesize(self, text, language):
 
         # Check that the input is text
@@ -29,7 +30,7 @@ class TextToSpeech:
         )
 
         return wav
-
+    # method to play the generated audio
     def play_audio(self, audio):
 
         self.tts.save_audio(audio, "output.wav")

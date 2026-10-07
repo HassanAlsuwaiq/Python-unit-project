@@ -42,13 +42,13 @@ LANGUAGES = {
     "Swedish": ("SV","sv")
                 }
 
-
+# Initialize the API clients with the respective API keys from environment variables
 stt = SpeechToText(os.getenv("GROQ_API_KEY"))
 gemini = GeminiProcessor(os.getenv("GEMINI_API_KEY"))
 translator = Translator(os.getenv("DEEPL_API_KEY"))
 tts = TextToSpeech()
 
-
+# Function to process the audio file and perform speech-to-text, Gemini processing, translation, and text-to-speech
 def process(audio_path, language):
     deepl_code, tts_code = LANGUAGES[language]
 
